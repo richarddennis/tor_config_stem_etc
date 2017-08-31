@@ -2,6 +2,31 @@
 
 Auto config to deploy tor to a vps and configure it to use the stem control and other things
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+Run as root
+
+```sh
+apt-get install -y git
+git clone https://github.com/richarddennis/tor_relay_config.git
+cd tor_relay_config
+chmod 755 bootstrap.sh
+./bootstrap.sh
+sudo apt-get install python-stem
+sudo apt-get install privoxy
+sudo gedit /etc/privoxy/config
+forward-socks5 / localhost:9050
+sudo /etc/init.d/privoxy restart
+python test_tor_stem_privoxy.py
+reboot
+```
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 Differences from the other setup scripts
 
 
