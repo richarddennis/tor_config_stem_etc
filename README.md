@@ -15,6 +15,7 @@ chmod 755 bootstrap.sh
 ./bootstrap.sh
 sudo apt-get install python-stem
 sudo apt-get install privoxy
+sudo apt-get install -y gedit 
 sudo gedit /etc/privoxy/config
 forward-socks5 / localhost:9050
 sudo /etc/init.d/privoxy restart
