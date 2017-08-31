@@ -1,10 +1,8 @@
-SocksPort 0
-Log notice file /var/log/tor/notices.log
-RunAsDaemon 1
-ORPort 9001
-DirPort 9030
-ExitPolicy reject *:*
 
+ControlPort 9051
+# hashed password below is obtained via `tor --hash-password my_password`
+HashedControlPassword 16:4B686E879FB96E1460637C8FCB6FEBAEF9C88CCDA997027AE52F2B22C8
+CookieAuthentication 1
 
 ##
 ## If you want to allow the same ports on IPv4 and IPv6, write your rules
