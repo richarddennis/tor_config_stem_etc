@@ -9,7 +9,7 @@ Run as root
 
 ```sh
 apt-get install -y git
-git clone https://github.com/richarddennis/tor_relay_config.git
+git clone https://github.com/richarddennis/tor_config_stem_etc.git
 cd tor_relay_config
 chmod 755 bootstrap.sh
 ./bootstrap.sh
