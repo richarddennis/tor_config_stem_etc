@@ -1,5 +1,10 @@
 # tor_config_stem_etc
 
+
+BROKEN 
+
+
+
 Auto config to deploy tor to a vps and configure it to use the stem control and other things
 
 -------------------------------------------------------------------------------------------------------------------------------------
