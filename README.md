@@ -15,5 +15,11 @@ You can create a hashed password out of your password using:
 tor --hash-password my_password
 ```
 
-16:4B686E879FB96E1460637C8FCB6FEBAEF9C88CCDA997027AE52F2B22C8
 
+
+```shell
+ControlPort 9051
+# hashed password below is obtained via `tor --hash-password my_password`
+HashedControlPassword 16:4B686E879FB96E1460637C8FCB6FEBAEF9C88CCDA997027AE52F2B22C8
+CookieAuthentication 1
+```
